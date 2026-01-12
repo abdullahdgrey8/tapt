@@ -5,7 +5,7 @@
 echo "=== Setting up TAPT Environment for Google Colab ==="
 
 # Navigate to project root
-cd /content/Baseline
+cd /content/tapt
 
 # 1. Install Dassl.pytorch
 echo "=== Installing Dassl.pytorch ==="
@@ -24,7 +24,7 @@ pip install ftfy regex tqdm scipy scikit-learn tabulate yacs gdown tb-nightly fu
 
 # 4. Set up environment variables
 export DATA="/content/drive/MyDrive/datasets"
-export PYTHONPATH="${PYTHONPATH}:/content/Baseline/TAPT:/content/Baseline/Dassl.pytorch"
+export PYTHONPATH="${PYTHONPATH}:/content/tapt/TAPT:/content/tapt/Dassl.pytorch"
 
 echo "=== Environment setup complete ==="
 echo "DATA path set to: $DATA"

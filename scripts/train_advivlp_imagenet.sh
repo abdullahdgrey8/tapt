@@ -25,7 +25,7 @@ SHOTS=16
 CFG=vit_b16_c2_ep100_batch8_2+2ctx_9depth_t4
 
 # Output directory for trained weights
-OUTPUT_DIR=/content/Baseline/output/train/${DATASET}/${TRAINER}/vit_b16_c2_ep100_batch32_2+2ctx_9depth_16shots/seed${SEED}
+OUTPUT_DIR=/content/tapt/output/train/${DATASET}/${TRAINER}/vit_b16_c2_ep100_batch32_2+2ctx_9depth_16shots/seed${SEED}
 
 # ============================================
 # PRE-CHECKS
@@ -65,7 +65,7 @@ if [ -d "$OUTPUT_DIR" ]; then
     fi
 fi
 
-cd /content/Baseline/Multimodal-Adversarial-Prompt-Tuning
+cd /content/tapt/Multimodal-Adversarial-Prompt-Tuning
 
 python train.py \
     --root ${DATA} \

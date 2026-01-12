@@ -11,7 +11,7 @@ DATA="/content/drive/MyDrive/datasets"
 
 # Path to pre-trained weights from Multimodal-Adversarial-Prompt-Tuning
 # This should point to the trained AdvIVLP weights
-WEIGHTSPATH="/content/Baseline/output/train/imagenet/AdvIVLP/vit_b16_c2_ep100_batch32_2+2ctx_9depth_16shots"
+WEIGHTSPATH="/content/tapt/output/train/imagenet/AdvIVLP/vit_b16_c2_ep100_batch32_2+2ctx_9depth_16shots"
 
 # ============================================
 # DO NOT MODIFY BELOW THIS LINE
@@ -42,7 +42,7 @@ if [ -d "$DIR" ]; then
 else
     echo "Evaluating model on DTD..."
     
-    cd /content/Baseline/TAPT
+    cd /content/tapt/TAPT
     
     CUDA_VISIBLE_DEVICES=0 python train.py \
         --root ${DATA} \

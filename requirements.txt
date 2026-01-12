@@ -1,0 +1,27 @@
+# Combined requirements for TAPT project
+# Based on Dassl.pytorch, CoOp, and CLIP requirements
+
+# Core PyTorch (will be pre-installed on Colab)
+# torch>=1.8.1
+# torchvision
+
+# Dassl.pytorch dependencies
+flake8==3.7.9
+yapf==0.29.0
+isort==4.3.21
+yacs
+gdown
+tb-nightly
+future
+scipy
+scikit-learn
+tqdm
+tabulate
+
+# CLIP dependencies
+ftfy
+regex
+
+# Additional for TAPT
+Pillow
+numpy
